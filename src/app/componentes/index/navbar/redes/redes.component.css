@@ -1,0 +1,30 @@
+.list-group {
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+
+.fa-brands.fa-square-facebook.fa-2x:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.25);
+    --bs-text-opacity: 1;
+    color: #1717d9 !important;
+}
+
+.fa-brands.fa-linkedin.fa-2x:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.25);
+    --bs-text-opacity: 1;
+    color: #2551a8 !important;
+}
+
+.fa-brands.fa-square-github.fa-2x:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.25);
+    --bs-text-opacity: 1;
+    color: #569730 !important;
+}
+
+.fa-solid.fa-user-lock.fa-2x:hover {
+    --bs-text-opacity: 1;
+    color: rgb(187, 150, 26) !important;
+}

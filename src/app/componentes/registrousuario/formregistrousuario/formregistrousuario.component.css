@@ -1,0 +1,28 @@
+.formLogin {
+    background-color: #FFFFFF;
+    color: #000000;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem 1rem 2rem;
+    justify-content: center;
+    margin-top: 13rem;
+}
+
+input.entradaForm {
+    font-size: 18px;
+    padding: 0.625rem 0.625rem 0.625rem 0.313rem;
+    border-bottom: 1px solid #49454567;
+}
+
+.botonRegistrar {
+    width: 100%;
+}
+
+.registro{
+    height: 86vh;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    background-color: #292b2b;
+    width: 100%;
+}
+
+a.link {
+    text-decoration: none;
+    color: #000000;
+}
+
+form h2 {
+    border-bottom: 1px solid;
+    padding-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    padding-bottom: 10rem;
+}
+
+.caja {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/assets/img/Gradiente\ Verde\ Azul\ Acuarela\ Fondos.jpg);
+    background-color: #292b2b;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    margin-bottom: 2rem;
+    color: #000000;
+    box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.list-group {
+    --bs-list-group-bg: transparent;
+    --bs-list-group-border-color: transparent;
+}
+
+@media (max-width: 575.98px) {
+    .intro {
+        padding-top: 6rem;
+        font-size: 2rem;
+    }
+} 
+
+.bg-black {
+    background-color: #000000;
+}
+
+.main {
+    padding-bottom: 10rem;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #000000;
+}

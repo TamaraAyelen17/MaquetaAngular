@@ -1,0 +1,61 @@
+<section class="educacion mt-3">
+    <div class="container caja">
+       <div class="row">
+          <div class="col mb-educacion">
+             <h3 class="mt-4"><span>Educación</span></h3>
+          </div>
+          <div class="col-md-4 col-sm-3 mt-5 ">
+             <div class="img-educacion">
+                <img src="/assets/img/Logo ISPC.png" class="card-img img-ispc mx-5" alt="...">
+             </div>
+             <div>
+                <ul class="list-group lista-ispc">
+                   <li class="list-group-item text-white">Instituto Superior Politécnico de Córdoba</li>
+                   <li class="list-group-item text-white">Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales</li>
+                   <li class="list-group-item text-white">2022 - Actualidad</li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-md-4 col-sm-3 mt-2">
+             <div class="img-educacion">
+                <img src="/assets/img/logo escuela.png" class="card-img mx-5" alt="..." style="height: 286px !important; width: 286px !important;">
+             </div>
+             <div>
+                <ul class="list-group">
+                   <li class="list-group-item text-white">Escuela De Educación Secundaria Nº16</li>
+                   <li class="list-group-item text-white">Bachiller en Ciencias Naturales</li>
+                   <li class="list-group-item text-white">2008 - 2013</li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-md-1 col-sm-3 mt-3">
+          </div>
+       </div>
+       <div class="row mb-certificados">
+          <div class="col-md-4 col-sm-3 mt-5">
+             <div class="col">
+                <h3 class="mt-5"><span>Certificados</span></h3>
+             </div>
+          </div>
+          <div class="col-md-4 col-sm-3 mt-3">
+          </div>
+          <div class="col-md-1 col-sm-3 mt-3">
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-3">
+          </div>
+          <div class="col-md-4 col-sm-3 mt-5 certificadoArgProg" *ngFor="let certificados of certificados">
+             <div class="col">
+                <div class="imgCertificadoAP">
+                   <img [src]="certificados.imagen" class="card-img" alt="...">
+                </div>
+             </div>
+          </div>
+          <div class="col-md-4 col-sm-3 mt-5 certificadoBAM bajar">
+            
+          </div>
+       </div>
+    </div>
+ </section>
+

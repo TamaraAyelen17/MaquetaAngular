@@ -1,0 +1,24 @@
+<section class="softskill mt-3">
+   <div class="container caja">
+      <div class="row">
+         <div class="col">
+            <h3 class="mt-4"><span>Hard y Softskill</span></h3>
+         </div>
+      </div>
+
+      <div class="row" *ngFor="let habilidad of habilidades">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-1 col-sm-3 mt-3 text-white">
+          <h6 class="mt-2" style="font-size: 0.8rem;">{{ habilidad.nombre }}</h6>
+        </div>
+        <div class="col-md-8 col-sm-3 mt-3">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped" [style.width]="habilidad.porcentaje">
+              <span class="progress-bar-text">{{ habilidad.porcentaje }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,16 @@
+.textoNav {
+    color: #00cdff;
+ }
+
+.vertical:hover {
+    --bs-text-opacity: 1;
+    color: rgb(226, 226, 226) !important;
+}
+
+li.vertical {
+    display: block;
+    margin: 0;
+    writing-mode: vertical;
+    padding: 2rem 0;
+    font-size: 1.15rem;
+}

@@ -1,0 +1,33 @@
+<section>
+    <div class="experiencia mt-3">
+       <div class="container caja">
+          <div class="row">
+             <div class="col-md-3 col-sm-4">
+                <h3 class="mt-4"><span>Experiencia</span></h3>
+             </div>
+             <div class="col-md-4 col-sm-4 mt-3" *ngFor="let experienciaLaboral of experiencias">
+                <div>
+                   <ul class="list-group">
+                      <li class="list-group-item text-white">
+                         <h3>{{experienciaLaboral.puesto}}</h3>
+                      </li>
+                      <li class="list-group-item text-white">
+                         <h6>{{experienciaLaboral.empresa}} {{experienciaLaboral.inicio}} {{experienciaLaboral.fin}} </h6>
+                      </li>
+                      <li class="list-group-item text-white"> {{experienciaLaboral.tarea1}} </li>
+                      <li class="list-group-item text-white"> {{experienciaLaboral.tarea2}} </li>
+                      <li class="list-group-item text-white"> {{experienciaLaboral.tarea3}} </li>
+                   </ul>
+                </div>
+             </div>
+             <div class="col-md-4 col-sm-4 mt-3 mb-3">
+            
+             </div>
+             <div class="col-md-1 col-sm-4">
+
+             </div>
+         </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,4 @@
+.fa-solid.fa-user-lock.fa-2x:hover {
+    --bs-text-opacity: 1;
+    color: rgb(187, 150, 26) !important;
+}

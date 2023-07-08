@@ -1,0 +1,31 @@
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+          <div class="modal-header">
+             <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio Sesión</h1>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+             <form>
+                <div class="mb-3">
+                   <label for="exampleInputEmail1" class="form-label">Email</label>
+                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                   <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                   <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                   <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                </div>
+             </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" style="width: 100%;"><a routerLink="/panel">Iniciar Sesión</a></button>
+         </div>
+         <small class="registrarse mx-3 pb-2" data-bs-dismiss="modal">Si no tenes cuenta <a class="text-primary-emphasis" routerLink="/registrousuario"> registrate</a></small>
+       </div>
+    </div>
+ </div>
+

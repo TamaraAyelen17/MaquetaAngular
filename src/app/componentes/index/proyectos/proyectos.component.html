@@ -1,0 +1,20 @@
+<section class="proyectos mt-3">
+    <div class="container caja">
+       <div class="row">
+          <div class="col">
+             <h3 class="mt-4"><span>Proyectos</span></h3>
+          </div>
+          <div class="col-md-3 col-sm-3 mt-3" *ngFor="let proyectos of proyecto">
+             <div class="card">
+                <img [src]="proyectos.imagen" class="card-img-top" alt="...">
+                <div class="card-body">
+                   <h5 class="card-title">{{ proyectos.nombre}}</h5>
+                   <p class="card-text">{{ proyectos.descripcion}}</p>
+                   <a [href]="proyectos.url"><span style="font-weight: 700;">Url del proyecto</span></a>
+                  </div>
+             </div>
+          </div>
+       </div>
+   </div>
+ </section>
+

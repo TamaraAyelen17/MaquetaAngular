@@ -1,0 +1,42 @@
+.banner {
+    padding-bottom: 6rem;
+}
+
+#banner-index {
+    background: url(/assets/img/banner2.png) center center fixed;
+    height: 50vh;
+    position: relative;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+    width: 100%;
+}
+
+.intro {
+    padding-top: 12rem;
+    font-size: 4rem;
+}
+
+h1.intro{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+h3.intro {
+    font-size: 2rem;
+    font-family: 'Dancing Script', cursive;
+    padding-top: 2rem;
+}
+
+/*Foto perfil*/
+.rounded-circle.w-25 {
+    position: absolute;
+    z-index: 1;
+    background-color: #FFFFFF;
+    height: auto;
+    width: 15rem !important;
+    margin-top: -10rem;
+    margin-left: 2rem;
+    border: 0.125rem solid #124a4e;
+}

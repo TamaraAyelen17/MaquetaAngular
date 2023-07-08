@@ -1,0 +1,106 @@
+{
+    "nombre": "Tamara",
+    "apellido": "Sorsaburu",
+    "titulo": "Full Stack Developer Jr",
+    "acercaDe": "Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Me gustan los desafios y nuevos proyectos que la empresa donde pretendo trabajar me pudiera proponer, cumpliendo asi las metas u objetivos que se me proyecten.",
+
+    "experiencias": [
+        {
+            "id": 1,
+            "puesto": "Asistente Administrativo",
+            "empresa": "Tc Electrónica,",
+            "inicio": "Feb 2018 - ",
+            "fin": "Nov 2021",
+            "tarea1": "Responsable de contestar llamadas telefónicas, recibir y registrar pagos.",
+            "tarea2": "Control de ingreso y egreso de mercaderia.",
+            "tarea3": "Mantenimiento de archivo."
+        },
+        {
+            "id": 2,
+            "puesto": "Recepcionista",
+            "empresa": "Pizzeria La Firenzze,",
+            "inicio": "May 2017 - ",
+            "fin": "Ene 2018",
+            "tarea1": "Recepción de clientes.",
+            "tarea2": "Encargada de recibir y registrar pagos.",
+            "tarea3": ""
+        }
+    ],
+    
+    "estudios": [
+        {
+            "id": 1,
+            "imagen": "../assets/img/Logo ISPC.png",
+            "institucion": "Instituto Superior Politécnico de Córdoba",
+            "titulo": "Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales",
+            "inicio": "2022 - ",
+            "fin": "Actualidad"
+        },
+        {
+            "id": 2,
+            "imagen": "../assets/img/logo escuela.png",
+            "institucion": "Escuela De Educación Secundaria Nº16",
+            "titulo": "Bachiller en ciencias naturales",
+            "inicio": "2008 - ",
+            "fin": 2013
+        }
+    ],
+
+    "certificados": [
+        {
+            "id":1,
+            "imagen": "../assets/img/argentina_programa_2022_page-0001.jpg"
+        },
+        {
+            "id":2,
+            "imagen": "../assets/img/Certificado BAM_17 SORSABURU_page-0001.jpg"
+        }
+    ],
+
+    "habilidades": [
+        {
+            "id":1,
+            "nombre": "HTML",
+            "porcentaje": "85%"
+        },
+        {
+            "id":2,
+            "nombre": "CSS",
+            "porcentaje": "80%"
+        },
+        {
+            "id":3,
+            "nombre": "GIT",
+            "porcentaje": "85%"
+        },
+        {
+            "id":1,
+            "nombre": "BOOTSTRAP",
+            "porcentaje": "90%"
+        }
+    ],
+
+    "proyectos": [
+        {
+            "id":1,
+            "imagen": "https://picsum.photos/400",
+            "nombre": "Proyecto 1",
+            "descripcion": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            "url": "https://www.ispc.edu.ar/https://www.ispc.edu.ar/"
+        },
+        {
+            "id":2,
+            "imagen": "https://picsum.photos/400",
+            "nombre": "Proyecto 2",
+            "descripcion": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            "url": "https://www.ispc.edu.ar/https://www.ispc.edu.ar/"
+        },
+        {
+            "id":3,
+            "imagen": "https://picsum.photos/400",
+            "nombre": "Proyecto 3",
+            "descripcion": "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+            "url": "https://www.ispc.edu.ar/https://www.ispc.edu.ar/"
+        }
+    ]
+}
