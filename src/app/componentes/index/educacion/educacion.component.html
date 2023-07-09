@@ -4,21 +4,21 @@
           <div class="col mb-educacion">
              <h3 class="mt-4"><span>Educación</span></h3>
           </div>
-          <div class="col-md-4 col-sm-3 mt-5 ">
+          <div class="col-md-4 col-sm-3 mt-5" *ngFor="let estudio of educaciones">
              <div class="img-educacion">
-                <img src="/assets/img/Logo ISPC.png" class="card-img img-ispc mx-5" alt="...">
+                <img [src]="estudio.imagen" class="card-img img-ed mx-5" alt="...">
              </div>
              <div>
                 <ul class="list-group lista-ispc">
-                   <li class="list-group-item text-white">Instituto Superior Politécnico de Córdoba</li>
-                   <li class="list-group-item text-white">Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales</li>
-                   <li class="list-group-item text-white">2022 - Actualidad</li>
+                   <li class="list-group-item text-white">{{ estudio.institucion }}</li>
+                   <li class="list-group-item text-white">{{ estudio.titulo }}</li>
+                   <li class="list-group-item text-white">{{ estudio.inicio }} {{ estudio.fin }}</li>
                 </ul>
              </div>
           </div>
-          <div class="col-md-4 col-sm-3 mt-2">
+          <!-- <div class="col-md-4 col-sm-3 mt-2">
              <div class="img-educacion">
-                <img src="/assets/img/logo escuela.png" class="card-img mx-5" alt="..." style="height: 286px !important; width: 286px !important;">
+                <img src="/assets/img/logo escuela.png" class="card-img mx-5 img-ed" alt="...">
              </div>
              <div>
                 <ul class="list-group">
@@ -26,8 +26,8 @@
                    <li class="list-group-item text-white">Bachiller en Ciencias Naturales</li>
                    <li class="list-group-item text-white">2008 - 2013</li>
                 </ul>
-             </div>
-          </div>
+             </div> 
+          </div>  -->
           <div class="col-md-1 col-sm-3 mt-3">
           </div>
        </div>

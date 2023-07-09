@@ -23,10 +23,9 @@
     padding-bottom: 1rem;
 }
 
-.img-escuela {
-    height: 286px; 
-    width: 286px;
-    padding-top: 2rem;
+.img-ed {
+    height: 286px !important;
+    width: 286px !important;
 }
 
 .bajar {
