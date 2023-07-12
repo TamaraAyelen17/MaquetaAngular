@@ -1,26 +1,42 @@
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-       <div class="modal-content">
+       <div class="modal-content formLogin">
           <div class="modal-header">
              <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio Sesión</h1>
              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-             <form>
+          <form [formGroup]="form"  (ngSubmit)="onEnviar($event)">
+            <div class="modal-body">
                 <div class="mb-3">
                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                   <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email" [class.border-success]="MailValid" [class.border-danger]="MailInvalid">
+                </div>
+                <div *ngIf="Mail?.errors && Mail?.touched">
+                  <p *ngIf="Mail?.hasError('required')" class="error">
+                     El email es requerido.
+                  </p>
+                  <p *ngIf="Mail?.hasError('email')" class="error">
+                     El formato del email debe ser válido.
+                  </p>
                 </div>
                 <div class="mb-3">
                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                   <input type="password" class="form-control" id="exampleInputPassword1">
+                   <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" [class.border-success]="PasswordValid" [class.border-danger]="PasswordInvalid">
                 </div>
+                <div *ngIf="Password?.errors && Password?.touched">
+                  <p *ngIf="Password?.hasError('required')" class="error">
+                    El password es requerido.
+                 </p>
+                 <p class="error">
+                    El password debe ser de 8 o más caracteres.
+                 </p>
+               </div>
                 <div class="mb-3 form-check">
                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
                    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
                 </div>
-             </form>
-          </div>
+            </div>
+          </form>
           <div class="modal-footer">
             <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" style="width: 100%;"><a routerLink="/panel">Iniciar Sesión</a></button>
          </div>

@@ -5,11 +5,11 @@
           <div class="row textoBanner">
              <div class="col-6 ms-auto me-auto">
                 <h1 class="text-white text-center intro">
-                   Tamara Sorsaburu
+                   {{ nombre }} {{ apellido }}
                 </h1>
                 <div>
                    <h3 class="text-white text-center intro">
-                      Full Stack Developer Jr
+                      {{ titulo }}
                    </h3>
                 </div>
              </div>
@@ -17,5 +17,5 @@
        </div>
     </header>
     <!--Foto perfil-->
-    <img class="rounded-circle w-25" src="/assets/img/Img cv.jpg" alt="fotoCv" title="fotoCv">
+    <img class="rounded-circle w-25" [src]="imagenPerfil" alt="fotoCv" title="fotoCv">
  </div>

@@ -3,6 +3,25 @@
     "apellido": "Sorsaburu",
     "titulo": "Full Stack Developer Jr",
     "acercaDe": "Soy una persona proactiva, organizada y responsable, con buenas relaciones interpersonales. Me gustan los desafios y nuevos proyectos que la empresa donde pretendo trabajar me pudiera proponer, cumpliendo asi las metas u objetivos que se me proyecten.",
+    "imagenPerfil": "../assets/img/Img cv.jpg",
+
+    "redes": [
+        {
+            "id":1,
+            "logo": "fa-brands fa-square-facebook",
+            "url": "https://www.facebook.com/TamiSorsaburu17/"
+        },
+        {
+            "id":2,
+            "logo": "fa-brands fa-linkedin",
+            "url": "https://www.linkedin.com/in/tamara-sorsaburu-243184245/"
+        },
+        {
+            "id":3,
+            "logo": "fa-brands fa-square-github",
+            "url": "https://github.com/TamaraAyelen17"
+        }
+    ],
 
     "experiencias": [
         {

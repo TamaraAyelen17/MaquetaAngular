@@ -4,32 +4,52 @@
             <div class="col-4">
             </div>
             <div class="col-4 formLogin">
-                <div class="modal-body">
-                    <form>
-                    <div class="pb-4">
-                        <h2 class="text-center">Registro</h2>
+                <form [formGroup]="form"  (ngSubmit)="onEnviar($event)">
+                    <div class="modal-body">
+                        <div class="pb-4">
+                            <h2 class="text-center">Registro</h2>
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Nombre</label>
+                            <input type="text" id="disabledTextInput" class="form-control entradaForm" formControlName="name" [class.border-success]="NameValid" [class.border-danger]="NameInvalid">
+                        </div>
+                        <div *ngIf="Name?.errors && Name?.touched">
+                            <p *ngIf="Name?.hasError('required')" class="error">
+                               El nombre es requerido.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="form-control entradaForm" id="exampleInputEmail1" formControlName="email" [class.border-success]="MailValid" [class.border-danger]="MailInvalid">
+                        </div>
+                        <div *ngIf="Mail?.errors && Mail?.touched">
+                            <p *ngIf="Mail?.hasError('required')" class="error">
+                               El email es requerido.
+                            </p>
+                            <p *ngIf="Mail?.hasError('email')" class="error">
+                               El formato del email debe ser válido.
+                            </p>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control entradaForm" id="exampleInputPassword1" formControlName="password" [class.border-success]="PasswordValid" [class.border-danger]="PasswordInvalid">
+                        </div>
+                        <div *ngIf="Password?.errors && Password?.touched">
+                            <p *ngIf="Password?.hasError('required')" class="error">
+                              El password es requerido.
+                            </p>
+                            <p class="error">
+                              El password debe ser de 8 o más caracteres.
+                            </p>
+                        </div>
+                        <div class="modal-footer pt-3">
+                            <button type="submit" class="botonRegistrar btn btn-primary"><a routerLink="/panel">Registrar</a></button>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="disabledTextInput" class="form-label">Nombre</label>
-                        <input type="text" id="disabledTextInput" class="form-control entradaForm">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control entradaForm" id="exampleInputEmail1">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                        <input type="password" class="form-control entradaForm" id="exampleInputPassword1">
-                    </div>
-                    </form>
-                </div>
-                <div class="modal-footer pt-3">
-                    <button type="submit" class="botonRegistrar btn btn-primary"><a routerLink="/panel">Registrar</a></button>
-                </div>
+                </form>
             </div>
             <div class="col-4">
             </div>
         </div>
     </div>
 </section> 
-
